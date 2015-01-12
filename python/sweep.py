@@ -3,14 +3,25 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ##parameters
-center_frequency = 4607500
-frequency_span = 1000
+center_frequency = 4607000
+frequency_span = 2000
 bandwidth = 300
-data_points = 101
+data_points = 11
 sweep_count = 2
 minimum_power = -1
 maximum_power = 1
 
+#export parameters
+parameters = [
+center_frequency,
+frequency_span,
+bandwidth,
+data_points,
+sweep_count,
+minimum_power,
+maximum_power
+]
+np.save('test_parameters',parameters)
 
 ##initialization
 #connect to NA
