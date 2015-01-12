@@ -6,13 +6,13 @@ import numpy as np
 center_frequency = 4607000
 frequency_span = 2000
 bandwidth = 300
-data_points = 11
+data_points = 61
 sweep_count = 2
 minimum_power = -1
 maximum_power = 1
 
 #export parameters
-parameters = [
+parameters = [[
 center_frequency,
 frequency_span,
 bandwidth,
@@ -20,7 +20,15 @@ data_points,
 sweep_count,
 minimum_power,
 maximum_power
-]
+],[
+'center_frequency',
+'frequency_span',
+'bandwidth',
+'data_points',
+'sweep_count',
+'minimum_power',
+'maximum_power'
+]]
 np.save('test_parameters',parameters)
 
 ##initialization
