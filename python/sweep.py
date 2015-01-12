@@ -4,12 +4,12 @@ import numpy as np
 
 ##parameters
 center_frequency = 4607500
-frequency_span = 4000
+frequency_span = 1000
 bandwidth = 300
 data_points = 101
-sweep_count = 1
-minimum_power = 0
-maximum_power = 0
+sweep_count = 2
+minimum_power = -1
+maximum_power = 1
 
 
 ##initialization
@@ -107,19 +107,21 @@ def maxima(data, n):
         slope[arguments[i]] = 0
     return arguments
 
-#determine the downward and upward transistion points
+#determine the downward and upward transistion points. First the arguments of the transitions in the array are found. Afterwards the corresponding frequencies are calculated.
 forward_magnitudes = np.load('test_forward_magnitudes.npy')
-downward_transition_points = minima(forward_magnitudes[0],1) #find the arguments of the downward transition points
-downward_transition_frequencies = np.zeros(sweep_count) #initializes array
-
 backward_magnitudes = np.load('test_backward_magnitudes.npy')
-upward_transition_points = maxima(backward_magnitudes[0],1) #find the arguments of the upward transition points
-upward_transition_frequencies = np.zeros(sweep_count) #initializes array
+
+downward_transition_points = np.zeros(sweep_count)
+upward_transition_points = np.zeros(sweep_count)
+downward_transition_frequencies = np.zeros(sweep_count) 
+upward_transition_frequencies = np.zeros(sweep_count)
 
 for i in range(sweep_count):
+    downward_transition_points[i] = minima(forward_magnitudes[i],1) 
+    upward_transition_points[i] = maxima(backward_magnitudes[i],1) 
     downward_transition_frequencies[i] = (frequency_range[downward_transition_points[i]]+frequency_range[downward_transition_points[i]+1])/2 #since the slope is calculated between two data points, take the middle between the two corresponding frequencies
     upward_transition_frequencies[i] = (frequency_range[-1-upward_transition_points[i]]+frequency_range[-2-upward_transition_points[i]])/2 #since the slope is calculated between two data points, take the middle between the two corresponding frequencies, the frequency range is reversed for the backwards sweep
 
 for i in range(sweep_count):
     plt.axvline(downward_transition_frequencies[i], ymin=0,ymax=1)
-    plt.axvline(upward_transition_frequencies[i], ymin=0,ymax=1)
+    plt.axvline(upward_transition_frequencies[i], ymin=0,ymax=1,color='r')
