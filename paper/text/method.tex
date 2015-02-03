@@ -1,0 +1,29 @@
+\section{method}
+Multiple experiments were conducted with gradually increasing complexity. 
+
+\subsection{Crystal analysis}
+The goals of the first phase are to choose a resonator and find benchmark impedance-frequency data of the chosen resonator. 
+
+Since a mechanical resonator is needed to react to the change of mass, but it is desirable to drive and analyze the system electronically, a piezoelectric resonator is used as a transformer between the electronic and mechanical signal. Piezoelectric materials exist with a Q-factor up to XXX, but they are very expensive. Ceramic resonators are cheap, but they lack stability and have low Q-factors. A good middle ground is a quartz crystal oscillator, since they have Q-factors up to $10^6$, and are mass-produced because of their use in almost any electronic device on the market. 
+
+Quartz crystals come in a variety of fundamental frequencies, shapes and sizes. For this experiment a large crystal is preferred over a small crystal, since it eases polymer coating. The fundamental frequency is preferably small, since it loosens bandwidth requirements of all components in the circuit and reduces crosstalk and phase lag XXX. The most common crystal shapes are a planar shear resonator and a tuning fork. Since the tuning fork has an irregular shape, it is hard to get an even coating. The first tests resulted in a coating which filled up the gap XXX. 
+
+The circuit used in the first test is 
+
+\subsection{Measurement}
+Since the crystal is driven by a voltage 
+
+\subsection{Amplification}
+Initial tests show (XXX) that a peak-to-peak voltage of $V_{PP} = 30$~V is needed to see a significant anisochronic effect. When driving the crystal with a sinusoidal signal with frequency $f$:
+
+$$\frac{V_{PP}}{2} \sin{2\pi ft},$$
+
+the slope of the signal is:
+
+\begin{equation}\label{eq:driving}
+\pi fV_{PP} \cos{2\pi ft},
+\end{equation}
+
+where the maximum slope is $pi fV_PP$. Using crystal frequency of $f=4.606$~MHz, the minimum slew rate of the amplifier should therefore be 425~V/$\mu$s. 
+
+The output of the mixer has a peak to peak voltage of about $V_{PP} = 20$~mV. To get the desired $V_{PP} = 30$~V, an amplification of about 1500 is needed. Since the frequency is $f=4.606$~MHz, a gain-bandwith product of 
