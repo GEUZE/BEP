@@ -1,15 +1,17 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}Theory}{2}
-\contentsline {subsection}{\numberline {2.1}Piezoelectricity}{2}
-\contentsline {subsection}{\numberline {2.2}Non-linear mechanics}{2}
-\contentsline {subsection}{\numberline {2.3}Resonance}{2}
-\contentsline {subsubsection}{\numberline {2.3.1}Q-factor}{2}
+\contentsline {section}{\numberline {2}Theory}{3}
+\contentsline {subsection}{\numberline {2.1}Piezoelectricity}{3}
+\contentsline {subsection}{\numberline {2.2}Non-linear mechanics}{3}
+\contentsline {subsection}{\numberline {2.3}Resonance}{3}
+\contentsline {subsubsection}{\numberline {2.3.1}Q-factor}{3}
 \contentsline {subsection}{\numberline {2.4}Crystal oscillator}{3}
-\contentsline {section}{\numberline {3}method}{3}
-\contentsline {subsection}{\numberline {3.1}Crystal analysis}{3}
-\contentsline {subsection}{\numberline {3.2}Measurement}{3}
-\contentsline {subsection}{\numberline {3.3}Amplification}{3}
-\contentsline {section}{\numberline {4}Results}{4}
-\contentsline {section}{\numberline {5}Conclusion}{4}
-\contentsline {section}{\numberline {A}Temperature-based quartz crystal relaxation oscillator}{4}
+\contentsline {section}{\numberline {3}Method \& Materials}{3}
+\contentsline {subsection}{\numberline {3.1}Experimental set-up}{3}
+\contentsline {subsubsection}{\numberline {3.1.1}Eletrical system}{3}
+\contentsline {subsection}{\numberline {3.2}Crystal analysis}{4}
+\contentsline {subsection}{\numberline {3.3}Measurement}{4}
+\contentsline {subsection}{\numberline {3.4}Amplification}{5}
+\contentsline {section}{\numberline {4}Results}{5}
+\contentsline {section}{\numberline {5}Conclusion}{5}
+\contentsline {section}{\numberline {A}Temperature-based quartz crystal relaxation oscillator}{5}

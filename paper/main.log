@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.30)  18 JAN 2015 17:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.30)  4 FEB 2015 13:01
 entering extended mode
 **main.tex
 (D:\Documents\BEP\paper\main.tex
@@ -339,33 +339,96 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 (D:\Documents\BEP\paper\text\introduction.tex [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
-(D:\Documents\BEP\paper\text\theory.tex) (D:\Documents\BEP\paper\text\method.tex [2] [3])
-(D:\Documents\BEP\paper\text\results.tex) (D:\Documents\BEP\paper\text\conclusion.tex) (D:\Documents\BEP\paper\main.bbl)
-(D:\Documents\BEP\paper\text\appendix.tex
+(D:\Documents\BEP\paper\text\theory.tex [2]) (D:\Documents\BEP\paper\text\method.tex
+! Undefined control sequence.
+l.8 ... electrical system can be found in \autoref
+                                                  {fig:oveele}. A function g...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 		\includegraphics{}
+                         
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.16 ...etailed schematic can be found in \autoref
+                                                  {fig:detsch}. Preliminary ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 		\includegraphics{}
+                         
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[3] [4]) (D:\Documents\BEP\paper\text\results.tex)
+Runaway argument?
+{Amplitude-frequency dependance) \par \par \par \subsection {Frequenc\ETC.
+! File ended while scanning use of \@xdblarg.
+<inserted text> 
+                \par 
+l.28 \input{./text/results.tex}
+                               
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+(D:\Documents\BEP\paper\text\conclusion.tex) (D:\Documents\BEP\paper\main.bbl) (D:\Documents\BEP\paper\text\appendix.tex
+
 Overfull \hbox (17.30583pt too wide) in paragraph at lines 3--3
 []\OT1/cmr/bx/n/17.28 Temperature-based quartz crys-tal re-lax-ation
  []
 
-) [4] (D:\Documents\BEP\paper\main.aux) ) 
+) [5] (D:\Documents\BEP\paper\main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4032 strings out of 493921
- 58770 string characters out of 3144876
- 116444 words of memory out of 3000000
- 7258 multiletter control sequences out of 15000+200000
+ 4049 strings out of 493921
+ 58904 string characters out of 3144876
+ 117444 words of memory out of 3000000
+ 7263 multiletter control sequences out of 15000+200000
  11857 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,13n,38p,655b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (4 pages, 130003 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
+b>
+Output written on main.pdf (5 pages, 133873 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

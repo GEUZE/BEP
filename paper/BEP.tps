@@ -18,7 +18,7 @@ Document=main.tex
 
 [Frame0_View0,0]
 TopLine=5
-Cursor=663
+Cursor=429
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=text\method.tex
 
 [Frame1_View0,0]
-TopLine=8
-Cursor=2286
+TopLine=3
+Cursor=419
 
 [Frame2]
 Flags=0
@@ -72,7 +72,7 @@ Document=text\results.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=94
+Cursor=19
 
 [Frame4]
 Flags=0
@@ -126,9 +126,9 @@ Document=text\theory.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=379
+Cursor=362
 
 [SessionInfo]
 FrameCount=7
-ActiveFrame=6
+ActiveFrame=0
 
