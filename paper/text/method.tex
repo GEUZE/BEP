@@ -8,15 +8,26 @@ The set-up consists of the electrical system to drive the crystals and measure i
 A schematic overview of the electrical system can be found in \autoref{fig:oveele}. A function generator sweeps the desired frequencies, which are amplified before exciting the crystal. The voltage drop over a series shunt resistor is measured using a differential amplifier. This voltage drop, which is linearly proportional to to the current that flows through the quartz crystal as described by Ohm's law, is indicative of the changing impedance of the crystal as a function of frequency. Therefor, this signal can be used to show when the crystal is on resonance. 
 \begin{figure}
 	\centering
-		\includegraphics{}
+		\includegraphics[width=\textwidth]{figures/placeholder.png}
 	\caption{Schematic overview of the electrical system of the experimental set-up. }
 	\label{fig:oveele}
 \end{figure}
 
-A more detailed schematic can be found in \autoref{fig:detsch}. Preliminary tests showed that the peak voltage of about $V_{pp}=10$~V is needed to have a strong non-linear response. The maximum current at these voltage were about $I_{pp}=200$~mA. 
+A more detailed schematic can be found in \autoref{fig:detsch}. Preliminary tests showed that the peak voltage of about $V_{p}=10$~V is needed to see a significant anisochronic effect. The maximum current at this voltage is about $I_{p}=200$~mA. A high speed operational amplifier was used in combination with a buffer amplifier in the feedback path to decrease the output impedance and increase the output current capability of the amplifier. The slew rate of the amplifier is also an important parameter, since the signal has both high frequency and high amplitude. The needed slew rate corresponds to the maximum slope of the output signal, which for a sinusoidal signal of the following form:
+\begin{equation}\label{eq:driving}
+v(t) = V_{P} \sin{2\pi ft},
+\end{equation}
+is given by:
+\begin{equation}\label{eq:slewrate}
+\mbox{max}\left(\left|\frac{dv(t)}{dt}\right|\right) = \frac{\pi fV_{P}}{2}.
+\end{equation}
+Using crystal frequency of $f=\SI{4.606}{\mega\hertz}$ and a peak voltage of $V_{p}=10$~V, the minimum slew rate of the amplifier should therefore be \SI{425}{\volt/\micro\second}. 
+
+
+
 \begin{figure}
 	\centering
-		\includegraphics{}
+		\includegraphics[width=\textwidth]{figures/placeholder.png}
 	\caption{Detailed schematic of the electrical system of the experimental set-up. }
 	\label{fig:detsch}
 \end{figure}
@@ -32,18 +43,3 @@ The circuit used in the first test is
 
 \subsection{Measurement}
 Since the crystal is driven by a voltage 
-
-\subsection{Amplification}
-Initial tests show (XXX) that a peak-to-peak voltage of $V_{PP} = 30$~V is needed to see a significant anisochronic effect. When driving the crystal with a sinusoidal signal with frequency $f$:
-
-$$\frac{V_{PP}}{2} \sin{2\pi ft},$$
-
-the slope of the signal is:
-
-\begin{equation}\label{eq:driving}
-\pi fV_{PP} \cos{2\pi ft},
-\end{equation}
-
-where the maximum slope is $pi fV_PP$. Using crystal frequency of $f=4.606$~MHz, the minimum slew rate of the amplifier should therefore be 425~V/$\mu$s. 
-
-The output of the mixer has a peak to peak voltage of about $V_{PP} = 20$~mV. To get the desired $V_{PP} = 30$~V, an amplification of about 1500 is needed. Since the frequency is $f=4.606$~MHz, a gain-bandwith product of 
