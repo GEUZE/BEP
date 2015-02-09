@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1492
-NormalPos.bottom=596
+NormalPos.right=1562
+NormalPos.bottom=540
 Class=LaTeXView
 Document=main.tex
 
 [Frame0_View0,0]
-TopLine=5
-Cursor=429
+TopLine=10
+Cursor=549
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1492
-NormalPos.bottom=596
+NormalPos.right=1562
+NormalPos.bottom=540
 Class=LaTeXView
 Document=text\method.tex
 
 [Frame1_View0,0]
-TopLine=3
-Cursor=419
+TopLine=12
+Cursor=2306
 
 [Frame2]
 Flags=0
@@ -47,8 +47,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1492
-NormalPos.bottom=596
+NormalPos.right=1562
+NormalPos.bottom=540
 Class=LaTeXView
 Document=text\abstract.tex
 
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1492
-NormalPos.bottom=596
+NormalPos.right=1562
+NormalPos.bottom=540
 Class=LaTeXView
 Document=text\results.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=19
+Cursor=24
 
 [Frame4]
 Flags=0
@@ -83,8 +83,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1492
-NormalPos.bottom=596
+NormalPos.right=1562
+NormalPos.bottom=540
 Class=LaTeXView
 Document=text\appendix.tex
 
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1492
-NormalPos.bottom=596
+NormalPos.right=1562
+NormalPos.bottom=540
 Class=LaTeXView
 Document=text\introduction.tex
 
@@ -119,8 +119,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1492
-NormalPos.bottom=596
+NormalPos.right=1562
+NormalPos.bottom=540
 Class=LaTeXView
 Document=text\theory.tex
 
@@ -131,4 +131,7 @@ Cursor=362
 [SessionInfo]
 FrameCount=7
 ActiveFrame=0
+
+[Bookmarks]
+main.tex=24 
 
