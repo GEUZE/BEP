@@ -7,9 +7,32 @@
 
 
 \subsection{Non-linear mechanics}
+XXX When an electrical potential is applied over a piezoelectric material, the material will deform from its equilibrium position when there is no electrical potential. This results in a restoring force inside the material which opposes the deforming piezoelectric force. The restoring force $F$ can be modeled as a polynomial of the form:
+\begin{equation}\label{eq:restoring_polynomial}
+F = \sum\limits_{i=1}^n -k_ix^i = - k_1x - k_2x^2 - \dots - k_{n}x^{n},
+\end{equation}
+where $k_n$ are constants which are to be determined, and $x$ is the displacement due to the deformation. For a symmetric material XXX, the restoring force should have the same magnitude when the deformation is in the positive or in the negative direction. Therefore, the restoring force must be an uneven function, so $k_i=0$ for even $i$.
+
+For small displacements, the first term of the restoring force is dominant, and the restoring force can be approximated by Hooke's law choosing $k_i=0$ for $i\neq 1$:
+\begin{equation}
+F = k_1x
+\end{equation}
+As displacements become larger, the first term that becomes significant after $k_1$ is $k_3$. In this experiment the quartz crystals will be modeled by a system with a restoring force of the form of \autoref{eq:restoring_polynomial} with only $k_1$ and $k_3$ non-zero:
+\begin{equation}\label{eq:nonlinear_restoring}
+F = k_1x + k_3x^3.
+\end{equation}
+
+The differential equation for a system with \autoref{eq:nonlinear_restoring} as the restoring force is called the Duffing equation:
+\begin{equation}\label{eq:duffing}
+\ddot{x} + \delta \dot{x} + k_1x + k_3x^3 = g(\omega t),
+\end{equation}
+where $\delta$ determines the amount of damping, $k_1$ is the linear stiffness, $k_3$ is the amount of non-linearity in the restoring force and $g(\omega t)$ is a driving function with frequency $\omega$.  
+
+\subsection{Solving the Duffing equation}
 
 
 \subsection{Resonance}
+
 
 
 \subsubsection{Q-factor}
