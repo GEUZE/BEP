@@ -29,7 +29,17 @@ The differential equation for a system with \autoref{eq:nonlinear_restoring} as 
 where $\delta$ determines the amount of damping, $k_1$ is the linear stiffness, $k_3$ is the amount of non-linearity in the restoring force and $g(\omega t)$ is a driving function with frequency $\omega$.  
 
 \subsection{Solving the Duffing equation}
+XXX some derivation of the frequency curve. 
 
+\begin{figure}
+	\centering
+	\setlength\figureheight{5cm} 
+	\setlength\figurewidth{0.8\textwidth}
+	\input{figures/alpha_r.tikz}
+	\input{figures/alpha_phi.tikz}
+	\caption{Frequency response of the Duffing equation with $\epsilon=1$, $\delta=0.2$, $\gamma=2.5$ for different values of non-linearity $\alpha$. With higher non-linearity, the curve becomes less symmetric and at high enough values for $\alpha$, multiple solutions are possible for a given frequency.}
+	\label{fig:sphere}
+\end{figure}
 
 \subsection{Resonance}
 

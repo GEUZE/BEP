@@ -13,6 +13,14 @@
 \usepackage{caption}
 \usepackage{hyperref}
 \usepackage{siunitx}
+\usepackage{pgfplots}
+
+\usepgfplotslibrary{external} 
+\tikzexternalize
+\tikzset{external/force remake}
+
+\newlength\figureheight 
+\newlength\figurewidth 
 
 \begin{document}
 
@@ -30,6 +38,7 @@
 \input{./text/results.tex}
 \input{./text/conclusion}
 \bibliographystyle{plain}
+Biochemical Sensors: Mimicking Gustatory and Olfactory Senses
 \bibliography{bib}
 \input{./text/appendix.tex}
 \end{document}
