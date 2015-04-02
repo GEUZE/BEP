@@ -2,26 +2,29 @@ close all
 clear all
 clc
 
-global w0 epsilon delta gamma alpha w
-w0 = 1;
-epsilon = 1;
+global mass w0 epsilon delta gamma alpha w
+mass = 1;
+w0 = sqrt(0.75)*1;
+epsilon = 0.75;
 delta = 0.2;
 gamma = 2.5;
 alpha = 0.03;
 
-G = 3;
-alpha_span = [0 0.003 0.03];
+G=11;
+gamma_span = linspace(1,4,G);
 N = 1000;
-Color = {'k','b','r','g','y'};
+Color = {'k','b','r','g','y','k','b','r','g','y','k','b','r','g','y','k','b','r','g','y'};
+
 
 wspan = linspace(0.001,2*w0,N);
-options = optimset('display','off','TolFun',0.5e-10);
+options = optimset('MaxFunEvals',500,'display','off','TolFun',1e-9);
 
-
+       
 for k = 1:G;
     clear f_up up f_unstable unstable f_down down
-    x0 = [0 0];
-    alpha = alpha_span(k);
+    gamma = gamma_span(k);
+    x0 = [gamma 0];
+    
     for i = 1:N;
         w = wspan(i);
         [A,fval,exitflag] = fsolve(@quartz,x0,options); % Call solver
@@ -32,6 +35,7 @@ for k = 1:G;
         up(i,:) = A;
         x0 = up(i,:);
         jump_down = i;
+        jump_down_w(k) = wspan(jump_down);
     end
     
     % jump_down = 2000;
@@ -53,6 +57,7 @@ for k = 1:G;
             x0(1) = 0.975*unstable(i,1);
             x0(2) = (1/0.975)*unstable(i,2);
             jump_up = i;
+            jump_up_w(k) = wspan(jump_down-jump_up);
         end
         
         x0(1) = 0.94 * x0(1);
@@ -96,7 +101,7 @@ for k = 1:G;
         phase{k} = up(:,2);
         
     end
-    legenda{k} = horzcat('\alpha = ',num2str(alpha));
+    legenda{k} = horzcat('\gamma = ',num2str(gamma));
     figure(1)
     hold on
     plot(frequency{k},amplitude{k},Color{k})
@@ -118,3 +123,7 @@ ax = gca;
 set(ax,'YTick',[0,pi/2,pi]);
 set(ax,'YTickLabel',{'-pi','-pi/2',0});
 legend(legenda)
+figure(3)
+xlabel('\omega/\omega_0')
+ylabel('\gamma')
+plot(jump_down_w,gamma_span,jump_up_w,gamma_span)

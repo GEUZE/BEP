@@ -9,11 +9,11 @@ delta = 0.2;
 gamma = 2.5;
 alpha = 0.03;
 
-G = 3;
-alpha_span = [0 0.003 0.03];
+gamma_span = [0.5 2 3.5];
 N = 1000;
 Color = {'k','b','r','g','y'};
 
+G=3;
 wspan = linspace(0.001,2*w0,N);
 options = optimset('display','off','TolFun',0.5e-10);
 
@@ -21,7 +21,7 @@ options = optimset('display','off','TolFun',0.5e-10);
 for k = 1:G;
     clear f_up up f_unstable unstable f_down down
     x0 = [0 0];
-    alpha = alpha_span(k);
+    gamma = gamma_span(k);
     for i = 1:N;
         w = wspan(i);
         [A,fval,exitflag] = fsolve(@quartz,x0,options); % Call solver
@@ -96,7 +96,7 @@ for k = 1:G;
         phase{k} = up(:,2);
         
     end
-    legenda{k} = horzcat('\alpha = ',num2str(alpha));
+    legenda{k} = horzcat('\gamma = ',num2str(gamma));
     figure(1)
     hold on
     plot(frequency{k},amplitude{k},Color{k})
