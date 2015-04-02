@@ -14,11 +14,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=540
 Class=LaTeXView
-Document=main.tex
+Document=text\theory.tex
 
 [Frame0_View0,0]
-TopLine=10
-Cursor=549
+TopLine=0
+Cursor=263
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=540
 Class=LaTeXView
-Document=text\method.tex
+Document=main.tex
 
 [Frame1_View0,0]
-TopLine=12
-Cursor=2306
+TopLine=0
+Cursor=172
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=540
 Class=LaTeXView
-Document=text\abstract.tex
+Document=text\method.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=16
+Cursor=1456
 
 [Frame3]
 Flags=0
@@ -68,11 +68,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=540
 Class=LaTeXView
-Document=text\results.tex
+Document=text\abstract.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=24
+Cursor=0
 
 [Frame4]
 Flags=0
@@ -86,11 +86,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=540
 Class=LaTeXView
-Document=text\appendix.tex
+Document=text\results.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=77
+Cursor=0
 
 [Frame5]
 Flags=0
@@ -104,11 +104,11 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=540
 Class=LaTeXView
-Document=text\introduction.tex
+Document=text\appendix.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=1879
+Cursor=0
 
 [Frame6]
 Flags=0
@@ -122,15 +122,15 @@ NormalPos.top=26
 NormalPos.right=1562
 NormalPos.bottom=540
 Class=LaTeXView
-Document=text\theory.tex
+Document=text\introduction.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=362
+Cursor=1983
 
 [SessionInfo]
 FrameCount=7
-ActiveFrame=0
+ActiveFrame=2
 
 [Bookmarks]
 main.tex=24 
